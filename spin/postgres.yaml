@@ -40,6 +40,11 @@ spec:
             secretKeyRef:
               name: secrets
               key: pgpass
+        - name: PGADMINPASS
+          valueFrom:
+            secretKeyRef:
+              name: secrets
+              key: pgadminpass
         - name: PGNAME
           value: ls_xgboost
         image: registry.nersc.gov/m4616/raknop/liuserver-postgres
