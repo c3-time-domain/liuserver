@@ -196,7 +196,7 @@ def load( pqfile, batchsize, is_bailout=False, stop_after=None ):
 
                 totcopied += len( rowset )
                 _logger.info( f"...have copied {totcopied} rows so far" )
-                if totcopied >= stop_after:
+                if ( stop_after is not None ) and ( totcopied >= stop_after ):
                     _logger.info( f"stopping prematurely as requested" )
                     break
 
