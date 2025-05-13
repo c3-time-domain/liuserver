@@ -54,6 +54,7 @@ RUN source /venv/bin/activate && \
        flask-sock==0.7.0 \
        gevent==24.11.1 \
        gunicorn==23.0.0 \
+       pyarrow==20.0.0 \
        psycopg==3.2.6 \
        pytest==8.3.5 \
        pytest-timestamper==0.0.10 \
