@@ -113,7 +113,8 @@ WORKDIR /webserver
 
 COPY src/templates /webserver/templates
 COPY src/static /webserver/static
-COPY src/webservice.py /webserver/websevice.py
+COPY src/webservice.py /webserver/webservice.py
+ENV PYTHONPATH=/webservice
 
 RUN mkdir /sessions
 
